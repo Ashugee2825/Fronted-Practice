@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        counter component </title>
+</head>
+<body>
+<button onclick="increase()"> +</button>
+<button onclick="decrese()"> -  </button>
+<button onclick="reset()"> Reset </button>
+<h3 id="count">0</h3>
+
+<script>
+    let counter =0;
+
+    function Updatedom(){
+        let head = document.getElementById('count');
+        head.textContent = counter;
+    }
+     
+     function increase() {
+        Counter++;
+        Updatedom();
+
+     }
+    function decrese() {
+        counter--;
+        Updatedom;
+    }
+
+    function Reset() {    
+         counter =0;
+         updatedom;
+    }
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>getElementById</title>
+
+</head>
+
+<body>
+    <p id = "para"> Paragraph 1</p>
+    <p id = "para"> Paragraph 2 </p>
+   <p id = "para"> Paragraph 3</p>
+   <button onclick="fun()">Click Here to Update DOM </button>
+
+<script>
+    function fun() {
+        let ele = document.getElementById('para');
+        ele.textContent = 'DOM Updated';
+
+    }
+</script>
+
+
+</body>
+</html>

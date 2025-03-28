@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>classList.add(), classList.remove()</title>
+    <style>
+        .stylecontent {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Wecome to JavaScript DOM Properties</p>
+    <button onclick="fun()">Click</button>
+
+    <script>
+        let toggle = false;
+        function fun(){
+            if(!toggle){
+            let target_ele = document.getElementById('para');
+            target_ele.classList.add('stylecontent');
+            toggle = true;
+            }
+
+            else {
+            let target_ele = document.getElementById('para');
+            target_ele.classList.remove('stylecontent');
+            toggle = false;
+            }
+        }
+    </script>
+</body>
+</html>

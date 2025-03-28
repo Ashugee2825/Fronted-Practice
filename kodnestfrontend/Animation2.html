@@ -1,0 +1,15 @@
+<script>
+    //WAP to display multiplaction of all arguments:
+    function mul(...args) {   // {10,20,30,40}
+        if(args.length === 0){
+            alert("Invalid parameter")
+        }
+        else{
+            args.reduce((acc,ele)=> acc * ele,1)
+            console.log("Multiplication is", Product);
+        }
+    }
+    mul();
+    mul(10,20);
+    mul(10,20,30);
+</script>

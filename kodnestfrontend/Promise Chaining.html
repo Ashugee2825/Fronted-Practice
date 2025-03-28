@@ -1,0 +1,42 @@
+<script>
+    function placeOrder(item){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log('Order Placed for: ',item);
+                resolve();
+            },4000);
+        })
+    }
+
+    function makePayment(amt){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Payment Received of Amount",amt);
+                resolve();
+            },5000);
+        })
+    }
+
+    function confirmOrder(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log('Order Confirmed');
+                resolve();
+            },1000);
+        })
+    }
+
+    async function ProcessOrder(){
+        await placeOrder('Shirts');
+        await makePayment(2500);
+        await confirmOrder();
+        console.log('Order Successfully Confirmed and Delivered');
+    }
+
+    ProcessOrder();
+
+    console.log('Next Tasks which are Not depend on Place Order Tasks');
+    console.log('Task1');
+    console.log('Task2');
+    
+</script>

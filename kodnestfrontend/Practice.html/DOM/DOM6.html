@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        innerText, innerHTML, createElement, appendChild(),
+        classList.add(), classList.remove()
+    </title>
+</head>
+<body>
+    <p id="para"></p>
+    <button onclick="fun()">CLICK</button>
+    <script>
+        let toggle = false;
+       function fun(){
+        if(!toggle){
+        let target_ele = document.getElementById('para');
+        target_ele.innerText = 'Wecome to JS';
+        toggle = true;
+        }
+        else {
+        let target_ele = document.getElementById('para');
+        target_ele.innerText = '';  
+        toggle = false;
+         }
+       }
+    </script>
+</body>
+</html>

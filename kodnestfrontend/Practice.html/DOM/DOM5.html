@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        HTML Live Colection VS static NODE LIst
+    </title>
+</head>
+<body>
+    <p class="para">para1</p>
+    <p class="para">para2</p>
+    <p class="para">para3</p>
+  
+
+    <script>
+        let ele = document.getElementByClassName('para');
+        console.log(ele.length);  //3
+
+        let newwle = document.createElement('p');
+        console.log(newele);  //<p> </p>
+
+        newwle.textContent = 'para4';
+        console.log(newele); // <p> para4</p>
+
+        newwle.classList.add('para4');
+
+        newwle.className('para');  
+        document.body.appendChild(newwle);
+
+
+        console.log(ele.length);
+    </script>
+</body>

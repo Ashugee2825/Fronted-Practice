@@ -1,0 +1,35 @@
+<script>
+    // arr = [10,20,30,40,50,60];
+    // //filter even element 
+
+    // let even = arr.filter((ele)=> {
+    //     return ele % 2 === 0;
+    // });
+
+
+    arr1 = [10,20,30,40];
+    let even12 = arr.filter((ele) => ele % 2 === 0);
+    console.log(even12);
+
+    //square 
+    let sq_array = arr.map(ele => ele * ele);
+
+    OR 
+    let sq = sq*arr 
+
+    // product
+
+    let product = arr.reduce((a,b)=> a*b,1)
+    console.log(product);
+
+    //ORr
+let pro = arr.reduce(function(acc,ele)
+{
+    return acc*ele;
+},1);
+
+console.log(pro)
+
+
+    // 10 === Strict Equality;
+</script>

@@ -1,0 +1,51 @@
+<script>
+    arr1 = [10,20,30];
+    console.log(arr1); // [10,20,30] 
+
+    arr1.push(40);
+    console.log(arr1);  //[10,20,30,40]
+
+    arr1.pop();
+    console.log(arr1); //[10,20,30] 
+
+    arr1.shift();
+    console.log(arr1);
+
+    arr1.unshift(100);
+    console.log(arr1);
+
+    // splice(start,deleteCount,Item to be added)
+    numbers = [100,200,300,400]
+    numbers.splice(1,2,600,700);   
+    console.log(new_array);   
+    console.lod(numbers); // [400,600,700,400]
+
+
+    numbers =[100,200,300,400]   
+    let res = numbers.splice(1,2,600,700,'k')
+    console.log(res);
+    console.log(numbers);
+
+    //slice(start , end)
+   let num1 = [900,800,700,600,500];
+   let num2 = num1.slice(1,4);
+    console.log("value of num1", num1);  
+    console.log("Value of num2",num2);//800,700,600
+// indexOF
+    console.log(num1.indexOf(600));    //3
+    console.log(num1.indexOf(600));    //3
+    console.log(num1.indexOf(600));    //3
+
+    //include
+    console.log(num.include(5000));  //false
+    
+    //sort()
+num1.sort();
+console.log(num1); //500600,700,800,900
+
+
+//reverse
+num1.reverse();
+console.log(num);  // 900,800,700,600,500
+
+</script>

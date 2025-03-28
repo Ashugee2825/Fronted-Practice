@@ -1,0 +1,17 @@
+<script>
+    let p1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('Task 2')
+            resolve();
+        },6000);
+    })
+
+    async function process(){
+        console.log('Task 1');
+        await p1;
+        console.log('Task 3 which is Depend on Task 2') 
+    }
+    process();
+    console.log('Task 4 which is independent on Task 2');
+    //1000 Lines
+</script>

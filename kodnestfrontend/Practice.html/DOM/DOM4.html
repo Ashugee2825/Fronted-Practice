@@ -1,0 +1,29 @@
+<!-- getElementByClassName() is used to target all element that matches specified enter-class=""
+  start and end  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>getElementByClassName</title>
+    </head>
+    <body>
+            <p class="Para">Para1</p>
+            <p class="para">Para2</p>
+            <p class="para">Para3</p>
+            <button onclick="fun()"> Click </button>
+
+            <script>
+                let elements = document.getElementsByClassName('para');
+                console.log(elements);
+
+                function fun(){
+                let newele = document.createElement('h1');
+                console.log(newele);
+                newele.textContent = 'hello from JS';
+                console.log(newele);
+                document.body.appendChild(newele);
+                }
+
+            </script>
+    </body>
+</html>
